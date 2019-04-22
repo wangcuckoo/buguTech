@@ -1,0 +1,5 @@
+hadoop，Hbase，spark，Mongodb这套大数据生态先熟悉起来。
+前端，cesium，openlayer用起来
+还有就是GIS服务端的GeoServer
+使用mission planner无人机地面站进行自动飞行任务规划11
+22
