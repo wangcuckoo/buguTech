@@ -1,4 +1,4 @@
-hadoop£¬Hbase£¬spark£¬MongodbÕâÌ×´óÊı¾İÉúÌ¬ÏÈÊìÏ¤ÆğÀ´¡£
-Ç°¶Ë£¬cesium£¬openlayerÓÃÆğÀ´
-»¹ÓĞ¾ÍÊÇGIS·şÎñ¶ËµÄGeoServer
-Ê¹ÓÃmission plannerÎŞÈË»úµØÃæÕ¾½øĞĞ×Ô¶¯·ÉĞĞÈÎÎñ¹æ»®
+hadoopï¼ŒHbaseï¼Œsparkï¼ŒMongodbè¿™å¥—å¤§æ•°æ®ç”Ÿæ€å…ˆç†Ÿæ‚‰èµ·æ¥ã€‚
+å‰ç«¯ï¼Œcesiumï¼Œopenlayerç”¨èµ·æ¥
+è¿˜æœ‰å°±æ˜¯GISæœåŠ¡ç«¯çš„GeoServer
+ä½¿ç”¨mission planneræ— äººæœºåœ°é¢ç«™è¿›è¡Œè‡ªåŠ¨é£è¡Œä»»åŠ¡è§„åˆ’11
