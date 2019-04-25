@@ -1,5 +1,6 @@
-git init(把文件夹变成可管理的git仓库)
+git init
 git add File
+git add -A
 git commit -m "sss"
 git checkout -b dev (创建分支并切换)
 git branch -d dev(删除分支)
@@ -20,12 +21,14 @@ git branch -D dev(未合并分支的删除)
 git remote add origin git@github.com:wangcuckoo/learngit.git（把本地仓库的内容推送到GitHub仓库）
 git remote(查看远程库信息)
 git remote -v
-git push origin master(推送分支到远程库)
-git push -u origin master（把本地库的所有内容推送到远程库上）
+git remote rm origin(移除关联的远程仓库)
+git remote add <origin> git@gitee.com:liaoxuefeng/learngit.git(关联远程库)
 git clone git@github.com:wangcuckoo/buguTech.git
-git pull(拉取当前版本的最新更新)
 git checkout -b dev origin/dev(创建关联远程地址的分支并切换)
 git branch --set-upstream-to=origin/dev dev （让存在的分支dev和远程库分支dev关联）
+git push origin master(推送分支到远程库)
+git push -u origin master（把本地库的所有内容推送到远程库上）
+git pull(拉取当前版本的最新更新)
 git rebase(可以把本地未push的分叉提交历史整理成直线)
 
 git tag v1.0(在最新的地方打标签)
