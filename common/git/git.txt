@@ -21,6 +21,8 @@ git remote -v
 git push origin master(推送分支到远程库)
 git clone git@github.com:wangcuckoo/buguTech.git
 git pull(拉取当前版本的最新更新)
+git checkout -b dev origin/dev(创建关联远程地址的分支并切换)
+git branch --set-upstream-to=origin/dev dev （让存在的分支dev和远程库分支dev关联）
 
 
 ssh-keygen -t rsa -C "youremail@example.com"（生成SSH Key,一个非公开的，一个公开的，公开的需要在你的GitHub使用）
