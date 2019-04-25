@@ -36,6 +36,17 @@ git push origin <tagname>（推送标签到远程库）
 git push origin --tags（推送所有标签到远程库）
 git tag -d v1.0      git push origin :refs/tags/v1.0（两步删除远程标签）
 
+git config --global alias.co checkout(修改别名)
+
+管理公钥Gitosis
+管理控制权限Gitolite
+
+
+.gitignore文件
+git add -f <filename> (强制添加到git)
+git check-ignore -v <filename> (Git会告诉我们，.gitignore的第3行规则忽略了该文件，于是我们就可以知道应该修订哪个规则)
+
 码云
 git remote add origin git@gitee.com:dashangwangle/buguTech.git
+
 ssh-keygen -t rsa -C "youremail@example.com"（生成SSH Key,一个非公开的，一个公开的，公开的需要在你的GitHub使用）
