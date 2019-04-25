@@ -1,3 +1,4 @@
+git init(把文件夹变成可管理的git仓库)
 git add File
 git commit -m "sss"
 git checkout -b dev (创建分支并切换)
