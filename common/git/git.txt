@@ -23,6 +23,16 @@ git clone git@github.com:wangcuckoo/buguTech.git
 git pull(拉取当前版本的最新更新)
 git checkout -b dev origin/dev(创建关联远程地址的分支并切换)
 git branch --set-upstream-to=origin/dev dev （让存在的分支dev和远程库分支dev关联）
+git rebase(可以把本地未push的分叉提交历史整理成直线)
+
+git tag v1.0(在最新的地方打标签)
+git tag v0.9 f52c633（在指定提交打标签）
+git tag -a v0.1 -m "version 0.1 released" 1094adb（在指定提交打标签并且说明）
+git show v1.0
+git tag -d v1.0(删除本地标签)
+git push origin <tagname>（推送标签到远程库）
+git push origin --tags（推送所有标签到远程库）
+git tag -d v1.0      git push origin :refs/tags/v1.0（两步删除远程标签）
 
 
 ssh-keygen -t rsa -C "youremail@example.com"（生成SSH Key,一个非公开的，一个公开的，公开的需要在你的GitHub使用）
