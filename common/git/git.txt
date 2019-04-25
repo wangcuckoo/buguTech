@@ -16,9 +16,11 @@ git stash pop(恢复stash的同时释放stash)
 git stash apply stash@{0}(多个stash,恢复指定stash)
 git branch -D dev(未合并分支的删除)
 
+git remote add origin git@github.com:wangcuckoo/learngit.git（把本地仓库的内容推送到GitHub仓库）
 git remote(查看远程库信息)
 git remote -v
 git push origin master(推送分支到远程库)
+git push -u origin master（把本地库的所有内容推送到远程库上）
 git clone git@github.com:wangcuckoo/buguTech.git
 git pull(拉取当前版本的最新更新)
 git checkout -b dev origin/dev(创建关联远程地址的分支并切换)
@@ -34,5 +36,6 @@ git push origin <tagname>（推送标签到远程库）
 git push origin --tags（推送所有标签到远程库）
 git tag -d v1.0      git push origin :refs/tags/v1.0（两步删除远程标签）
 
-
+码云
+git remote add origin git@gitee.com:dashangwangle/buguTech.git
 ssh-keygen -t rsa -C "youremail@example.com"（生成SSH Key,一个非公开的，一个公开的，公开的需要在你的GitHub使用）
