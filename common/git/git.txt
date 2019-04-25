@@ -1,0 +1,25 @@
+git add File
+git commit -m "sss"
+git checkout -b dev (创建分支并切换)
+git branch -d dev(删除分支)
+git branch (查看分支)
+git checkout master (切换分支)
+git status (查看当前分支状态)
+git log(查看日志)
+git merge --no-ff -m "sss" dev(合并分支并提交，禁用Fast forward,保留了分支历史)
+git log --graph --pretty=oneline --abbrev-commit (一条线上查看历史图)
+git stash(保存当前分支到别的地方)
+git stash list
+git stash apply(恢复stash内容，但是stash不删除，需要git stash drop来释放stash)
+git stash drop(释放stash)
+git stash pop(恢复stash的同时释放stash)
+git stash apply stash@{0}(多个stash,恢复指定stash)
+git branch -D dev(未合并分支的删除)
+
+git remote(查看远程库信息)
+git remote -v
+git push origin master(推送分支到远程库)
+
+
+
+ssh-keygen -t rsa -C "youremail@example.com"（生成SSH Key,一个非公开的，一个公开的，公开的需要在你的GitHub使用）
