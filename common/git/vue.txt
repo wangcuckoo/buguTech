@@ -1,0 +1,21 @@
+cnpm install -g @vue/cli
+vue -V
+
+vue-cli3:
+vue create vue-openlayers//vue-cli3有一套固定的模板，通过create自动下载依赖
+npm run serve
+在浏览器访问http://127.0.0.1:8080
+
+vue-cli2:
+使用webpack打包工具：
+npm install webpack -g
+npm install webpack-dev-server -g
+npm install 安装其他依赖
+
+开发环境：首次运行需要执行init命令生成html入口文件，以后不用再执行
+npm run init然后执行dev，
+本地环境就可以跑起来了，默认端口是8080，如果有冲突请先kill
+npm run dev
+在浏览器访问http://127.0.0.1:8080
+
+生产环境：直接执行build方法即可编译打包：npm run build

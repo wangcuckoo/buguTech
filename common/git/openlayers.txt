@@ -1,0 +1,4 @@
+vue create vue-openlayers //创建vue项目
+npm run serve//运行vue项目
+cd vue-openlayers
+cnpm i -S ol//为某个项目添加openlayers插件

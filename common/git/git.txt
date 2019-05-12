@@ -1,56 +1,58 @@
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
 git init
 git add File
 git add -A
 git commit -m "sss"
-git checkout -b dev (´´½¨·ÖÖ§²¢ÇĞ»»)
-git branch -d dev(É¾³ı·ÖÖ§)
-git branch (²é¿´·ÖÖ§)
-git checkout master (ÇĞ»»·ÖÖ§)
-git status (²é¿´µ±Ç°·ÖÖ§×´Ì¬)
-git log(²é¿´ÈÕÖ¾)
-git merge --no-ff -m "sss" dev(ºÏ²¢·ÖÖ§²¢Ìá½»£¬½ûÓÃFast forward,±£ÁôÁË·ÖÖ§ÀúÊ·)
-git log --graph --pretty=oneline --abbrev-commit (Ò»ÌõÏßÉÏ²é¿´ÀúÊ·Í¼)
-git stash(±£´æµ±Ç°·ÖÖ§µ½±ğµÄµØ·½)
+git checkout -b dev (åˆ›å»ºåˆ†æ”¯å¹¶åˆ‡æ¢)
+git branch -d dev(åˆ é™¤åˆ†æ”¯)
+git branch (æŸ¥çœ‹åˆ†æ”¯)
+git checkout master (åˆ‡æ¢åˆ†æ”¯)
+git status (æŸ¥çœ‹å½“å‰åˆ†æ”¯çŠ¶æ€)
+git log(æŸ¥çœ‹æ—¥å¿—)
+git merge --no-ff -m "sss" dev(åˆå¹¶åˆ†æ”¯å¹¶æäº¤ï¼Œç¦ç”¨Fast forward,ä¿ç•™äº†åˆ†æ”¯å†å²)
+git log --graph --pretty=oneline --abbrev-commit (ä¸€æ¡çº¿ä¸ŠæŸ¥çœ‹å†å²å›¾)
+git stash(ä¿å­˜å½“å‰åˆ†æ”¯åˆ°åˆ«çš„åœ°æ–¹)
 git stash list
-git stash apply(»Ö¸´stashÄÚÈİ£¬µ«ÊÇstash²»É¾³ı£¬ĞèÒªgit stash dropÀ´ÊÍ·Åstash)
-git stash drop(ÊÍ·Åstash)
-git stash pop(»Ö¸´stashµÄÍ¬Ê±ÊÍ·Åstash)
-git stash apply stash@{0}(¶à¸östash,»Ö¸´Ö¸¶¨stash)
-git branch -D dev(Î´ºÏ²¢·ÖÖ§µÄÉ¾³ı)
+git stash apply(æ¢å¤stashå†…å®¹ï¼Œä½†æ˜¯stashä¸åˆ é™¤ï¼Œéœ€è¦git stash dropæ¥é‡Šæ”¾stash)
+git stash drop(é‡Šæ”¾stash)
+git stash pop(æ¢å¤stashçš„åŒæ—¶é‡Šæ”¾stash)
+git stash apply stash@{0}(å¤šä¸ªstash,æ¢å¤æŒ‡å®šstash)
+git branch -D dev(æœªåˆå¹¶åˆ†æ”¯çš„åˆ é™¤)
 
-git remote add origin git@github.com:wangcuckoo/learngit.git£¨°Ñ±¾µØ²Ö¿âµÄÄÚÈİÍÆËÍµ½GitHub²Ö¿â£©
-git remote(²é¿´Ô¶³Ì¿âĞÅÏ¢)
+git remote add origin git@github.com:wangcuckoo/learngit.gitï¼ˆæŠŠæœ¬åœ°ä»“åº“é“¾æ¥åˆ°GitHubä»“åº“ï¼‰
+git remote(æŸ¥çœ‹è¿œç¨‹åº“ä¿¡æ¯)
 git remote -v
-git remote rm origin(ÒÆ³ı¹ØÁªµÄÔ¶³Ì²Ö¿â)
-git remote add <origin> git@gitee.com:liaoxuefeng/learngit.git(¹ØÁªÔ¶³Ì¿â)
+git remote rm origin(ç§»é™¤å…³è”çš„è¿œç¨‹ä»“åº“)
+git remote add <origin> git@gitee.com:liaoxuefeng/learngit.git(å…³è”è¿œç¨‹åº“)
 git clone git@github.com:wangcuckoo/buguTech.git
-git checkout -b dev origin/dev(´´½¨¹ØÁªÔ¶³ÌµØÖ·µÄ·ÖÖ§²¢ÇĞ»»)
-git branch --set-upstream-to=origin/dev dev £¨ÈÃ´æÔÚµÄ·ÖÖ§devºÍÔ¶³Ì¿â·ÖÖ§dev¹ØÁª£©
-git push origin master(ÍÆËÍ·ÖÖ§µ½Ô¶³Ì¿â)
-git push -u origin master£¨°Ñ±¾µØ¿âµÄËùÓĞÄÚÈİÍÆËÍµ½Ô¶³Ì¿âÉÏ£©
-git pull(À­È¡µ±Ç°°æ±¾µÄ×îĞÂ¸üĞÂ)
-git rebase(¿ÉÒÔ°Ñ±¾µØÎ´pushµÄ·Ö²æÌá½»ÀúÊ·ÕûÀí³ÉÖ±Ïß)
+git checkout -b dev origin/dev(åˆ›å»ºå…³è”è¿œç¨‹åœ°å€çš„åˆ†æ”¯å¹¶åˆ‡æ¢)
+git branch --set-upstream-to=origin/dev dev ï¼ˆè®©å­˜åœ¨çš„åˆ†æ”¯devå’Œè¿œç¨‹åº“åˆ†æ”¯devå…³è”ï¼‰
+git push origin master(æ¨é€åˆ†æ”¯åˆ°è¿œç¨‹åº“)
+git push -u origin masterï¼ˆæŠŠæœ¬åœ°åº“çš„æ‰€æœ‰å†…å®¹æ¨é€åˆ°è¿œç¨‹åº“ä¸Šï¼‰
+git pull(æ‹‰å–å½“å‰ç‰ˆæœ¬çš„æœ€æ–°æ›´æ–°)
+git rebase(å¯ä»¥æŠŠæœ¬åœ°æœªpushçš„åˆ†å‰æäº¤å†å²æ•´ç†æˆç›´çº¿)
 
-git tag v1.0(ÔÚ×îĞÂµÄµØ·½´ò±êÇ©)
-git tag v0.9 f52c633£¨ÔÚÖ¸¶¨Ìá½»´ò±êÇ©£©
-git tag -a v0.1 -m "version 0.1 released" 1094adb£¨ÔÚÖ¸¶¨Ìá½»´ò±êÇ©²¢ÇÒËµÃ÷£©
+git tag v1.0(åœ¨æœ€æ–°çš„åœ°æ–¹æ‰“æ ‡ç­¾)
+git tag v0.9 f52c633ï¼ˆåœ¨æŒ‡å®šæäº¤æ‰“æ ‡ç­¾ï¼‰
+git tag -a v0.1 -m "version 0.1 released" 1094adbï¼ˆåœ¨æŒ‡å®šæäº¤æ‰“æ ‡ç­¾å¹¶ä¸”è¯´æ˜ï¼‰
 git show v1.0
-git tag -d v1.0(É¾³ı±¾µØ±êÇ©)
-git push origin <tagname>£¨ÍÆËÍ±êÇ©µ½Ô¶³Ì¿â£©
-git push origin --tags£¨ÍÆËÍËùÓĞ±êÇ©µ½Ô¶³Ì¿â£©
-git tag -d v1.0      git push origin :refs/tags/v1.0£¨Á½²½É¾³ıÔ¶³Ì±êÇ©£©
+git tag -d v1.0(åˆ é™¤æœ¬åœ°æ ‡ç­¾)
+git push origin <tagname>ï¼ˆæ¨é€æ ‡ç­¾åˆ°è¿œç¨‹åº“ï¼‰
+git push origin --tagsï¼ˆæ¨é€æ‰€æœ‰æ ‡ç­¾åˆ°è¿œç¨‹åº“ï¼‰
+git tag -d v1.0      git push origin :refs/tags/v1.0ï¼ˆä¸¤æ­¥åˆ é™¤è¿œç¨‹æ ‡ç­¾ï¼‰
 
-git config --global alias.co checkout(ĞŞ¸Ä±ğÃû)
+git config --global alias.co checkout(ä¿®æ”¹åˆ«å)
 
-¹ÜÀí¹«Ô¿Gitosis
-¹ÜÀí¿ØÖÆÈ¨ÏŞGitolite
+ç®¡ç†å…¬é’¥Gitosis
+ç®¡ç†æ§åˆ¶æƒé™Gitolite
 
 
-.gitignoreÎÄ¼ş
-git add -f <filename> (Ç¿ÖÆÌí¼Óµ½git)
-git check-ignore -v <filename> (Git»á¸æËßÎÒÃÇ£¬.gitignoreµÄµÚ3ĞĞ¹æÔòºöÂÔÁË¸ÃÎÄ¼ş£¬ÓÚÊÇÎÒÃÇ¾Í¿ÉÒÔÖªµÀÓ¦¸ÃĞŞ¶©ÄÄ¸ö¹æÔò)
+.gitignoreæ–‡ä»¶
+git add -f <filename> (å¼ºåˆ¶æ·»åŠ åˆ°git)
+git check-ignore -v <filename> (Gitä¼šå‘Šè¯‰æˆ‘ä»¬ï¼Œ.gitignoreçš„ç¬¬3è¡Œè§„åˆ™å¿½ç•¥äº†è¯¥æ–‡ä»¶ï¼Œäºæ˜¯æˆ‘ä»¬å°±å¯ä»¥çŸ¥é“åº”è¯¥ä¿®è®¢å“ªä¸ªè§„åˆ™)
 
-ÂëÔÆ
+ç äº‘
 git remote add origin git@gitee.com:dashangwangle/buguTech.git
 
-ssh-keygen -t rsa -C "youremail@example.com"£¨Éú³ÉSSH Key,Ò»¸ö·Ç¹«¿ªµÄ£¬Ò»¸ö¹«¿ªµÄ£¬¹«¿ªµÄĞèÒªÔÚÄãµÄGitHubÊ¹ÓÃ£©
+ssh-keygen -t rsa -C "youremail@example.com"ï¼ˆç”ŸæˆSSH Key,ä¸€ä¸ªéå…¬å¼€çš„ï¼Œä¸€ä¸ªå…¬å¼€çš„ï¼Œå…¬å¼€çš„éœ€è¦åœ¨ä½ çš„GitHubä½¿ç”¨ï¼‰

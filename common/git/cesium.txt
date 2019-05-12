@@ -1,0 +1,3 @@
+vue-cli3:
+npm install --save-dev cesium
+https://www.jianshu.com/p/09d9c31ac5cf

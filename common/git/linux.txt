@@ -1,0 +1,13 @@
+sudo dpkg-reconfigure console-setup设置
+sudo halt:关机
+sudo passwd root:修改root密码
+logout:登出
+登录root
+ufw disable 关闭防火墙(使用root用户会有防火墙问题，简化处理关闭防火墙和iptables服务，同时考虑到使用文本需要下载vim组件)
+apt-get remove iptables 卸载服务iptables
+apt-get install vim  安装组件vim
+apt-get install openssh-server 安装ssh服务
+/etc/init.d/ssh start 启动ssh服务
+ps -e | grep sshd 查看ssh服务进程  是否启动
+
+vim /etc/ssh/sshd_config 打开配置文件
